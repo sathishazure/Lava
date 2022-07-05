@@ -17,7 +17,7 @@ pipeline{
     }
     stage('copy'){
       steps{
-       echo 'copy'
+       sh 'cp /var/lib/jenkins/workspace/dsl-dev/target/sparkjava-hello-world-1.0.war /opt/softwares/apache-tomcat-9.0.64/webapps'
       }
     }
   }
